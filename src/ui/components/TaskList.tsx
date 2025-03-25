@@ -38,7 +38,10 @@ export default function TaskList() {
                 <div className="m-2">
                     <ul className="">
                         {itemList.map((item, i) => (
-                            <li className="flex justify-between p-1" key={i}>
+                            <li
+                                className="flex justify-between p-1 cursor-pointer"
+                                key={i}
+                            >
                                 {item}{" "}
                                 <button onClick={() => handleRemoveItem(item)}>
                                     <Trash />

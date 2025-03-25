@@ -17,7 +17,7 @@ export default function Pomodoro() {
                     <h1 className="flex items-center text-6xl">25:00</h1>
                 </div>
                 <div className="flex justify-center">
-                    <button className="m-2 p-2 border-3 min-w-1/12">
+                    <button className="m-2 p-2 border-3 min-w-1/12 cursor-pointer">
                         Start
                     </button>
                 </div>
