@@ -7,8 +7,10 @@ export default function TaskList() {
     const [inputText, setInputText] = useState("");
 
     function handleAddItem() {
-        setItemList([...itemList, inputText]);
-        setInputText("");
+        if (inputText != "") {
+            setItemList([...itemList, inputText]);
+            setInputText("");
+        }
     }
 
     function handleRemoveItem(item: string) {
